@@ -2,9 +2,11 @@
  * Kyle Dodaro
  * Beta 0.1: 12/11/16 - 1/22/2017
  * Beta 0.2: 1/22/2017 - 1/23/2017
+ * Beta 0.2.1 7/30/2017
  * Allows for the suspension of processes
  */
 
+#region References
 using System;
 using System.Linq;
 using System.Threading;
@@ -15,13 +17,17 @@ using System.Diagnostics;
 using System.Net;
 using System.Runtime.InteropServices;
 using Microsoft.VisualBasic;
+#endregion
 
 namespace ProcessSuspend
 {
     public partial class frmMain : Form
     {
+        //does the program use the config file (holds new process names, etc)
         bool usesConfig = false;
+        //current process ID for any given selected process
         int pid = 0;
+        //initla process name (is gta5, since that's the primary use case)
         public string processName = "gta5";
 
         public frmMain()
@@ -31,6 +37,7 @@ namespace ProcessSuspend
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            //checks to see if the config file is being used
             checkDirectory();
             if (usesConfig != false)
             {
@@ -47,6 +54,7 @@ namespace ProcessSuspend
 
         private void btnSuspend_Click(object sender, EventArgs e)
         {
+            //grabs the processes matching the name
             Process[] game = Process.GetProcessesByName(processName);
             if (game.Length > 0)
             {
@@ -94,6 +102,7 @@ namespace ProcessSuspend
         }
 
         #region Suspension and Resuming
+        //all yer fancy, dandy things we use in order to access the super shady process resuming and suspending stuff
         [Flags]
         public enum ProcessAccess : uint
         {
@@ -114,6 +123,7 @@ namespace ProcessSuspend
             Synchronize = 0x100000
         }
 
+        //dll references (wish I used c++. this entire project would've been easier lmao)
         [DllImport("ntdll.dll")]
         internal static extern uint NtResumeProcess([In] IntPtr processHandle);
         [DllImport("ntdll.dll")]
@@ -226,7 +236,5 @@ namespace ProcessSuspend
         {
             lblProcessName.Text = "Process name: " + processName;
         }
-
-
     }
 }
