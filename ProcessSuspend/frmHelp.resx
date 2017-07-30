@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblInformation.Text" xml:space="preserve">
+    <value>DO NOT DISTRIBUTE THIS PROGRAM*
+*You may distrubite this if I say so, but under no other circumstances than this will you distribute this program. I'm not going to give app support to people I don't know.
+If you want to give this to someone ask me first, and if I say no, that means no.
+
+Warning: Be safe in the programs you use this on, it may cause deadlocks. GTA is fine though. If a deadlock occurs (computer responds to absolutely nothing, such as pressing caps lock and it does nothing), restart the computer to fix it.</value>
+  </data>
+  <data name="lblHowToUse.Text" xml:space="preserve">
+    <value>Make sure GTA is running and then press the "Suspend" button and wait for the game to say it is no longer responding then press the "Resume" button to bring the game back to life.
+
+If you want to change the name of the process you use hit the "Process" bar at the top of the main screen and then press "New name" and enter the new name for the process you want the program to suspend when you click the button.
+Word of warning, if you do not select that you want the new names to be saved in the Options menu, the new process name will go away when you exit the program. Select the option to save the new names in order to save them when you exit.
+
+If you need to check to see what the name of the process is that you want to suspend go to the "Process" bar and hit "Process list" then you can scroll around to find the running processes. There is some guesswork involved there with the process names if the name of the process doesn't look like the name of the program. Be careful with what you suspend.
+</value>
+  </data>
+  <data name="lblHowToUpdate.Text" xml:space="preserve">
+    <value>In order to update ProcessSuspend go into the Options tab and click on the "Check for updates" button. The button open up your browser and alert you to the version you are currently using so when you hit the download page you can check to see if the version available is higher than what you currently have.
+
+If a newer version is available, download the .zip file, extract it, and then run the .exe. If you get hit with a SmartScreen error hit "More info" then press "Run anyway." I promise it's safe, I'm just not a known developer to Microsoft, so it blocks it, that's all.
+
+Once you download the newer version you can delete the .exe of the lower version you have. If you already have a save file in your documents (Documents\KCDev\ProcessSuspend) keep it because the new version will use the same file.</value>
+  </data>
+  <data name="lblErrorsBugs.Text" xml:space="preserve">
+    <value>ProcessSuspend should be mostly devoid of bugs since it is a fairly simple program, however should you find a bug please report it using the information in the "Reporting bugs" tab.
+
+The most common error you may run in to is if ProcessSuspend does nothing when you hit the "Suspend" button. There are two likely causes for this.
+The first reason is that ProcessSuspend isn't running in Administrator mode. Now, it's set to start in Admin mode to avoid this problem but if for some reason you have UAC turned off this will cause a problem since the program can't do it's job without Admin mode.
+The other reason is that the program cannot find the other program, such as GTA, that you are trying to suspend. To fix this, find the correct name of the actual process for the thing you're trying to suspend use the directions in the "How to use" section to save it.
+
+As noted in the information section, this program may cause deadlocks. If everything is frozen on your computer and not even the caps lock will make the keyboard light up or anything, you must restart the computer and then the deadlock will go away. A deadlock has never occured during development, testing, and real use, however it is best you are aware that it is a possibility. Be safe with this program.
+</value>
+  </data>
+  <data name="lblReportingBugs.Text" xml:space="preserve">
+    <value>On the off chance you found a bug either report it to me or send an email to kyle@misterstuffgames.com using the subject "ProcessSuspend bug" and then make a detailed description of what the bug is and list the steps on how you created it if you can remember.
+
+If you have a suggestion or other feedback tell me or email kyle@misterstuffgames.com using the subject "ProcessSuspend feedback" and then list your feedback or suggestion.
+
+If you have a question ask me or email kyle@misterstuffgames.com using the subject "ProcessSuspend question" and then ask your question.</value>
+  </data>
+</root>
