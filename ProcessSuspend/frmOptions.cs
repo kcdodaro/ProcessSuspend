@@ -64,6 +64,8 @@ namespace ProcessSuspend
         }
 
         #region FileIO
+        //this is a really nasty action tree
+        //fix this and make it less nasty pls
         public void selectAction(string strAction)
         {
             string basePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
