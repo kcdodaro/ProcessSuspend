@@ -94,63 +94,30 @@ namespace ProcessSuspend
         }
 
         #region Suspension and Resuming
-
-        /// The process-specific access rights.
         [Flags]
         public enum ProcessAccess : uint
         {
-            // Required to terminate a process using TerminateProcess.
             Terminate = 0x1,
-
-            // Required to create a thread.
             CreateThread = 0x2,
-
-            // Undocumented.
             SetSessionId = 0x4,
-
-            // Required to perform an operation on the address space of a process (see VirtualProtectEx and WriteProcessMemory).
             VmOperation = 0x8,
-
-            // Required to read memory in a process using ReadProcessMemory.
             VmRead = 0x10,
-
-            // Required to write to memory in a process using WriteProcessMemory.
             VmWrite = 0x20,
-
-            // Required to duplicate a handle using DuplicateHandle.
             DupHandle = 0x40,
-
-            // Required to create a process.
             CreateProcess = 0x80,
-
-            // Required to set memory limits using SetProcessWorkingSetSize.
             SetQuota = 0x100,
-
-            // Required to set certain information about a process, such as its priority class (see SetPriorityClass).
             SetInformation = 0x200,
-
-            // Required to retrieve certain information about a process, such as its token, exit code, and priority class (see OpenProcessToken, GetExitCodeProcess, GetPriorityClass, and IsProcessInJob).
             QueryInformation = 0x400,
-
-            // Undocumented.
             SetPort = 0x800,
-
-            // Required to suspend or resume a process.
             SuspendResume = 0x800,
-
-            // Required to retrieve certain information about a process (see QueryFullProcessImageName). A handle that has the PROCESS_QUERY_INFORMATION access right is automatically granted PROCESS_QUERY_LIMITED_INFORMATION.
             QueryLimitedInformation = 0x1000,
-
-            // Required to wait for the process to terminate using the wait functions.
             Synchronize = 0x100000
         }
 
         [DllImport("ntdll.dll")]
         internal static extern uint NtResumeProcess([In] IntPtr processHandle);
-
         [DllImport("ntdll.dll")]
         internal static extern uint NtSuspendProcess([In] IntPtr processHandle);
-
         [DllImport("kernel32.dll", SetLastError = true)]
         internal static extern IntPtr OpenProcess(
             ProcessAccess desiredAccess,
